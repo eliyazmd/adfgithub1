@@ -1,0 +1,17 @@
+{
+	"name": "PI_Wait2",
+	"properties": {
+		"activities": [
+			{
+				"name": "Wait 20s",
+				"type": "Wait",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"waitTimeInSeconds": 20
+				}
+			}
+		],
+		"annotations": []
+	}
+}
