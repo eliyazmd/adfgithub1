@@ -1,0 +1,19 @@
+{
+	"name": "ds_Jsonsink",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "adlsgen2json",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "raw"
+			}
+		},
+		"schema": {}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

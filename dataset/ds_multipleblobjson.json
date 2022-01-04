@@ -1,0 +1,28 @@
+{
+	"name": "ds_multipleblobjson",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_blob1",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"sourcefilejson": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": {
+					"value": "@dataset().sourcefilejson",
+					"type": "Expression"
+				},
+				"container": "input"
+			}
+		},
+		"schema": {}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

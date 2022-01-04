@@ -1,0 +1,19 @@
+{
+	"name": "ds_Jsoninputconfig",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_blob1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"container": "config"
+			}
+		},
+		"schema": {}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

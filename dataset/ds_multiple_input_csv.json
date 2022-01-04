@@ -1,0 +1,32 @@
+{
+	"name": "ds_multiple_input_csv",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_blob1",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"Sourcefilename": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": {
+					"value": "@dataset().Sourcefilename",
+					"type": "Expression"
+				},
+				"container": "inputcsvfiles"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

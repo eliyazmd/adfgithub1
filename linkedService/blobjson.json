@@ -1,0 +1,12 @@
+{
+	"name": "blobjson",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobStorage",
+		"typeProperties": {
+			"connectionString": "DefaultEndpointsProtocol=https;AccountName=akkiblob1;EndpointSuffix=core.windows.net;",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkRBVEFGQUNUT1JZQEU2OUY4NkU0LTM3M0UtNDU3Ni04OTMwLURFOEIwMDU3QjE5Ml9hM2EzZGYxMS1lYzVmLTRiZjgtYTA1YS05Njk3MmNkNzMxMGMiDQp9"
+		}
+	}
+}

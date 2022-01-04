@@ -1,0 +1,27 @@
+{
+	"name": "ds1pdfblob",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_blob1",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"sourcepdf": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": {
+					"value": "@dataset().sourcepdf",
+					"type": "Expression"
+				},
+				"container": "input"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
