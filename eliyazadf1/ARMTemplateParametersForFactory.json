@@ -1,0 +1,36 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "eliyazadf1"
+		},
+		"ls_adfdlsg1_accountKey": {
+			"value": ""
+		},
+		"blobjson_connectionString": {
+			"value": ""
+		},
+		"adlsgen2json_accountKey": {
+			"value": ""
+		},
+		"LS_Sql_Connection_connectionString": {
+			"value": ""
+		},
+		"ls_blob1_properties_typeProperties_connectionString_secretName": {
+			"value": "ConnectionString"
+		},
+		"ls_adfdlsg1_properties_typeProperties_url": {
+			"value": "https://adfakkidlsg1.dfs.core.windows.net"
+		},
+		"adlsgen2json_properties_typeProperties_url": {
+			"value": "https://adfakkidlsg1.dfs.core.windows.net"
+		},
+		"Ls_HTTP_Connection_properties_typeProperties_url": {
+			"value": "@{linkedService().baseURL}"
+		},
+		"ls_keyvault_properties_typeProperties_baseUrl": {
+			"value": "https://azurenewkeyvault01akki.vault.azure.net/"
+		}
+	}
+}
